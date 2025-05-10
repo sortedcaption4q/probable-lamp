@@ -1,0 +1,15 @@
+<button onclick="toggle()">🌓 Toggle Dark Mode</button>
+<style id="theme">
+  body { background: white; color: black; font-family: sans-serif; }
+</style>
+
+<script>
+function toggle() {
+  const theme = document.getElementById("theme");
+  if (theme.innerHTML.includes("white")) {
+    theme.innerHTML = "body { background: #111; color: #eee; }";
+  } else {
+    theme.innerHTML = "body { background: white; color: black; }";
+  }
+}
+</script>
